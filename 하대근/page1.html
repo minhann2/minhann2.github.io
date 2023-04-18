@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팔공산소개</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        nav{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+        nav a{
+            position: relative;
+            margin: 0 20px;
+            font-size:2em;
+            color:#000000;
+            text-decoration: none;
+        }
+        nav #underline{
+            position: absolute;
+            left: 0;
+            height: 4px;
+            width: 0;
+            background: #000000;
+            bottom: -9px;
+            transition: 0.2s;
+            border-radius: 5px;
+        }
+        h2{
+            margin-top: 15em;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="underline"></div>
+        <a href="page1.html">introduce</a>
+        <a href="page2.html">history</a>
+        <a href="page3.html">hikingtrail</a>
+        <a href="page4.html">season</a>
+        <a href="page5.html">restaurant</a>
+        <a href="page6.html">festival</a>
+    </nav>
+    <header>
+
+    </header>
+    
+    <h2>팔공산 소개</h2>
+    <p>팔공산은 대한민국 경기도 평택시 팔당산로에 위치한 산입니다.</p>
+    <script type="text/javascript">
+        var underline = document.querySelector('#underline');
+        var item = document.querySelectorAll('nav a');
+        function select(event){
+            underline.style.left = event.offsetLeft+"px";
+            underline.style.width = event.offsetWidth+"px";
+        }
+        item.forEach(link =>{
+            link.addEventListener('click', (event)=>{
+                select(event.target);
+            })
+        })
+    </script>
+</body>
+</html>

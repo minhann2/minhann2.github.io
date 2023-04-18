@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팔공산 - 하이킹 코스</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+
+        }
+        nav{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+        nav a{
+            position: relative;
+            margin: 0 20px;
+            font-size:2em;
+            color:#000000;
+            text-decoration: none;
+        }
+        nav #underline{
+            position: absolute;
+            left: 0;
+            height: 4px;
+            width: 0;
+            background: #000000;
+            bottom: -9px;
+            transition: 0.2s;
+            border-radius: 5px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        h2{
+            font-size: 2.5em;
+            margin-bottom: 2em;
+            margin-top: 2.5em;
+        }
+        h3{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        ol{
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        li{
+            width: 300px;
+            height: 500px;
+            margin: 1em;
+            max-width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #cccccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        li:hover{
+            transform: translateY(-10px);
+        }
+        img{
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .trail-info{
+            padding: 1em;
+            text-align: center;
+        }
+        .trail-info h3{
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+        .trail-info p{
+            font-size: 0.9em;
+            color: #666666;
+            line-height: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="underline"></div>
+        <a href="page1.html">introduce</a>
+        <a href="page2.html">history</a>
+        <a href="page3.html">hikingtrail</a>
+        <a href="page4.html">season</a>
+        <a href="page5.html">restaurant</a>
+        <a href="page6.html">festival</a>
+    </nav>
+    <h2>하이킹 코스</h2>
+    <ul>
+        <li>
+            <img src="종주코스.jpg" alt="trail1">
+            <div class="trail-info">
+                <h3>팔공산 종주코스</h3>
+                <p>칠곡군 동명면 기성리 해원정사에서 출발하여 가산바위에 오르면 산성이 만들어진 천혜의 입지여건을 생각하게 한다.</p><br>
+                <ol><b>오시는 길  - &nbsp;</b> 중앙고속도로 다부나들목 → 대구 방면 5번 국도 → 동명면소재지 → 좌회전 → 팔공산 방면 79번 지방도 송림사 입구 → 가산산성 입구</ol>                
+            </div>
+        </li>
+        <li>
+            <img src="은해사.jpg" alt="trail2">
+            <div class="trail-info">
+                <h3>은해사 1코스</h3>
+                <p>은해사에서 출발하는 이코스는 은해사와 주산맥(관봉으로 계속된 능선) 사이에는 백흥암, 중앙암, 묘봉암을 비롯하여 건들바위, 만년송, 장군수 등 코스의 변화에 따른 경관을 만끽할 수 있다.</p><br>
+                <ol><b>오시는 길  - &nbsp;</b> 경부고속도로 (하행) 북대구 지나서 도동분기점 → 대구·포항고속도로 방향 → 청통·와촌 IC →청통 은해사 방향</ol>
+            </div>
+        </li>
+        <li>
+            <img src="약사암1.jpg" alt="trail3">
+            <div class="trail-info">
+                <h3>갓바위 1코스</h3>
+                <p>약사암에서 관봉에 오르면 경산 전경을 볼 수 있다. 또한 지성으로 기도하면 드리면 누구나 한가지 소원은 들어준다는 것으로 유명한 갓바위 부처님에게 소원을 빌 수 있다. </p><br>
+                <ol><b>오시는 길  - &nbsp;</b> 도동분기점 → 대구포항간고속도로 → 청통와촌IC → 약사암</ol>
+            </div>
+        </li>
+        <li>
+            <img src="약사암.jpg" alt="trail1">
+            <div class="trail-info">
+                <h3>갓바위 2코스</h3>
+                <p>약사암에는 부산, 울산 등지에서 관광버스로 오시는 분들이 많다. 선본사에서 출발하여 관봉에 올랐다가 약사암을 거쳐서 선본사로 내려오는 코스는 약 2.1㎞에 1시간 10분정도 소요된다. </p><br>
+                <ol><b>오시는 길  - &nbsp;</b> 도동분기점 → 대구포항간고속도로 → 청통와촌IC → 선본사</ol>
+            </div>
+        </li>
+        <li>
+            <img src="치산폭포.jpg" alt="trail1">
+            <div class="trail-info">
+                <h3>치산계곡 1코스</h3>
+                <p>수도사에 있는 보물 제1271호 쾌불탱화를 살펴보고, 20여분 오르면 3단으로 이루어져 낙차가 크고 유량이 매우 풍부한 공산폭포(치산폭포)의 아름다운 모습을 구경할 수 있다. </p><br>
+                <ol><b>오시는 길  - &nbsp;</b> 영천시내 - 군위 방면 28번 국도 - 화성리에서 치산리방면 919번 지방도 - 치산관광지</ol>
+            </div>
+        </li>
+        <li>
+            <img src="가산바위.jpg" alt="trail1">
+            <div class="trail-info">
+                <h3>가산산성 1코스</h3>
+                <p>팔공산 가운데 등산 애호가들이 가장 많이 찾는 곳으로 초보자들도 쉽게 오를 수 있다. 입구 주변에는 진남문이 있고 조금 오르면 잠시 쉬었다 갈 수 있는 휴게정자가 설치되어 있다. </p><br>
+                <ol><b>오시는 길  - &nbsp;</b> 중앙고속도로 다부나들목 → 대구 방면 5번 국도 → 동명면소재지 → 좌회전 → 팔공산 방면 79번 지방도 송림사 입구 → 가산산성 입구</ol>
+            </div>
+        </li>
+        <li>
+            <div class="trail-info">
+                <h3>출처 사이트</h3>
+                <a href="https://www.gb.go.kr/Main/open_contents/section/forest/page.do?mnu_uid=1778&LARGE_CODE=450&MEDIUM_CODE=60&SMALL_CODE=20&SMALL_CODE2=10&SMALL_CODE3=10&">팔공산코스</a>
+            </div>
+        </li>
+        </ul>
+    </body>
+    </html>

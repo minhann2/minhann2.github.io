@@ -1,0 +1,138 @@
+<html>
+        <style>
+             body
+            {
+                margin-top: 0;
+                background-color: antiquewhite;
+            }
+            a
+            {
+            text-decoration: none;
+            font-size: 16px;
+            }
+            table
+            {
+                width: 100%;
+                max-width: 50%;
+                margin:auto;
+            }
+            td
+            {
+                text-align: center;
+                padding: 20px; 
+            }
+            img
+            {
+                width: 400px;
+                height: 400px;
+                
+            }
+
+            ul
+    {
+        display: table;
+        margin: auto;
+        width: auto;
+    }
+    #menu > ul > li > ul
+    {
+        width:130px;
+        display:none;
+        position: absolute;
+        font-size:14px;
+        background: skyblue;
+    }
+    #menu > ul > li:hover > ul
+    {
+        display:block;
+    }
+    #menu > ul > li > ul > li:hover
+    {
+        background: orange;
+        transition: ease 1s;
+    }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color:#333;
+        }
+        #menu {
+            font:bold 16px "malgun gothic";
+            width: 100%;
+            height:50px;
+            background: white;
+            color:black;
+            line-height: 50px; 
+            margin:auto;
+            text-align:center;
+        }
+        #menu > ul > li {
+            float:left;
+            width:140px;
+            position:relative;
+            font-size: 20px;
+        }
+        </style>
+        <body>
+            <p style="font-size: 50px; font-weight: bold; color:black; text-align: center; margin: 50px;">팔공산</p>
+            <div id="menu">
+                <ul>
+                    <li><a href="#">소개</a>
+                        <ul>
+                            <li><a href="https://www.daegu.go.kr/env/index.do?menu_id=00000914">팔공산의 유래</a></li>
+                            <li><a href="https://www.daegu.go.kr/env/index.do?menu_id=00000915">공원현황</a></li>
+                            <li><a href="https://www.daegu.go.kr/env/index.do?menu_id=00000916">주요시설</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">관광지</a>
+                        <ul>
+                            <li><a href="x.html">케이블카</a></li>
+                            <li><a href="x2.html">동화사</a></li>
+                            <li><a href="x3.html">갓바위</a></li>          
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">먹거리</a>
+                        <ul>
+                            <li><a href="food.html">식당</a></li>
+                            <li><a href="dessert.html">디저트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://www.daegu.go.kr/env/index.do?menu_id=00000917">오시는길</a>
+                    </li>
+                </ul>
+        <table>
+            <tr>
+                <td colspan="3">
+                    <p style="font-size: 40px;">
+                        디저트
+                    </p>
+                </td>
+                
+            </tr>
+                    <tr>
+                        <td><a style="font-size: 25px;" href="https://www.instagram.com/donot_disturb80/">두낫디스터브</a>
+                            <img src="디저트1.jpg">
+                        </td>
+                        <td><a style="font-size: 25px;" href="https://www.instagram.com/briny_palgong/">브리니팔공</a>
+                            <img src="디저트2.jpg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a style="font-size: 25px;" href="http://www.cafeheima.co.kr/">헤이마</a>
+                            <img src="디저트3.jpg">
+                        </td>
+                        <td><a style="font-size: 25px;" href="https://www.instagram.com/gradient_cafe/">그라디언트</a>
+                            <img src="디저트4.jpg">
+                        </td>
+                    </tr>       
+        </table>
+    </body>
+</html>

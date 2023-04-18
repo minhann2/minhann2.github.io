@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>역사</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        nav{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+        nav a{
+            position: relative;
+            margin: 0 20px;
+            font-size:2em;
+            color:#000000;
+            text-decoration: none;
+        }
+        nav #underline{
+            position: absolute;
+            left: 0;
+            height: 4px;
+            width: 0;
+            background: #000000;
+            bottom: -9px;
+            transition: 0.2s;
+            border-radius: 5px;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #F5F5F5;
+        }
+        h2{
+            font-size: 3em;
+            margin-bottom: 1em;
+        }
+        p{
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+        .container{
+            max-width: 800px;
+            padding: 2em;
+            background-color: #FFFFFF;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="underline"></div>
+        <a href="page1.html">introduce</a>
+        <a href="page2.html">history</a>
+        <a href="page3.html">hikingtrail</a>
+        <a href="page4.html">season</a>
+        <a href="page5.html">restaurant</a>
+        <a href="page6.html">festival</a>
+    </nav>
+    <div class="container">
+        <h2>팔공산의 역사</h2>
+        <p>
+            팔공산은 국내에서 가장 오래된 산중 사찰인 태실사와 금당산성, 대흥암, 만복교 등 다양한 역사 유적지가 있어 역사적인 가치도 높습니다. <br><br>
+            또한, 팔공산은 제주도 북부의 한라산과 함께 한라산 국립공원으로 지정되어 있습니다. 그리고 제주도는 해외여행객들이 방문하는 대표적인 관광지 중 하나로 선정되어 있으며, 이 중에서도 팔공산은 제주도에서 유일하게 지정된 자연문화유산입니다.
+        </p>
+    </div>
+</body>
+</html>

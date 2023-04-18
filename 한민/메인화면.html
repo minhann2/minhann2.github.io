@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>팔공산</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
+
+        /* main Styles */
+
+        html { box-sizing: border-box; }
+
+        *, *:before, *:after { box-sizing: inherit; }
+
+        body {
+            background: darkgray;
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            margin: 0;
+        }
+
+        a { text-decoration: none; }
+
+        .container {
+            width: 1000px;
+            margin: auto;
+        }
+
+        h1 { text-align:center; margin-top:150px;}
+
+        /* Navigation Styles */
+
+        nav { background: #2ba0db; }
+
+        nav ul {
+            font-size: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: #fff;
+            display: block;
+            font-size: 14px;
+            padding: 15px 14px;
+            transition: 0.3s linear;
+        }
+
+        nav ul li:hover { background: yellowgreen; }
+
+        nav ul li ul {
+            border-bottom: 5px solid #2ba0db;
+            display: none;
+            position: absolute;
+            width: 250px;
+        }
+
+        nav ul li ul li {
+            border-top: 1px solid #444;
+            display: block;
+        }
+
+        nav ul li ul li:first-child { border-top: none; }
+
+        nav ul li ul li a {
+            background: #373737;
+            display: block;
+            padding: 10px 14px;
+        }
+
+        nav ul li ul li a:hover { background: #126d9b; }
+
+        nav .fa.fa-angle-down { margin-left: 6px; }
+        .block-div {
+            background-color: white;
+            border-color:black;
+    display: block;
+    flex: 1 0 0px;
+    min-height: 60rem;
+    width : 70%;
+    margin-left : 14%;
+    overflow: visible;
+    padding: 1.5rem;
+    word-break: break-all;
+    border: 1px solid black;
+            
+        }
+        .block-di {
+            background-color: white;
+            border-color:black;
+    display: block;
+    flex: 1 0 0px;
+    min-height: 2rem;
+    width : 30%;
+    margin-left : 14%;
+    overflow: visible;
+    padding: 1.5rem;
+    word-break: break-all;
+    border: 1px solid black;}
+        thead{
+            background-color: #6ab048; 
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #fff;
+            
+            
+        }
+        .add{
+            background-color: #6ab048; 
+            color: #fff
+        }
+        tfoot{
+            font-size: 1.2em;
+            text-align: center;
+        }
+       p{
+        font-size:1.2em;
+        font-weight: bold;
+       }
+       li{
+        font-size:1.2em;
+        font-weight: bold;
+       }
+       img{
+        width: 400px;
+        height: 350px;
+       }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="메인화면.html">메인화면</a></li>
+                <li><a href="팔공산 갓바위.html">팔공산 갓바위</a></li>
+                <li> <a href="#">팔공산에 대하여<i class='fa fa-angle-down'></i></a>
+                    <ul>
+                        <li><a href="팔공산위치.html">팔공산 정보</a></li>
+                        <li><a href="팔공산사고.html">팔공산 사건사고</a></li>
+                        <li><a href="팔공산 캐디사건.html">팔공산 캐디사건</a></li>
+                    </ul>
+                </li>
+                <li class='sub-menu'> <a href="#">팔공산 유흥거리<i class='fa fa-angle-down'></i></a>
+                    <ul>
+                        <li><a href="팔공산 맛집.html">팔공산 맛집</a></li>
+                        <li><a href="팔공산케이블카.html">팔공산 케이블카</a></li>
+                        <li><a href="팔공산폐모텔.html">팔공산 폐모텔</a></li>
+                    </ul>
+                </li>
+                <li><a href="팔공산벚꽃.html">팔공산 벚꽃 축제</a></li>
+            </ul>
+        </div>
+    </nav>
+<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+    $('nav li').hover(
+        function() {
+            $('ul', this).stop().slideDown(200);
+        },
+        function() {
+            $('ul', this).stop().slideUp(200);
+        }
+    );
+</script>
+<div class="block-div">
+    
+    <b><font size="6">팔공산</font></b><br>
+    <p>이 홈페이지는 팔공산에 관한 정보들이나 역사 등을 담은 홈페이지 입니다.
+        재밌게 봐주시면 감사하겠습니다 :)
+    </p>
+    
+    <table>
+        <tr>
+            <td><img src="가을.jpg" alt=""></td> <td><img src="여름.jpg" alt=""></td> <td><img src="노을.jpg" width = "400px" height="300px"></td>
+        </tr>
+        <tr>
+            <td><img src="봄.jpg" alt=""></td> <td><img src="겨울.jpg" alt=""></td> <td><img src="사슴.jpg" alt=""></td>
+        
+        </tr>
+        <tr>
+            <td><img src="팔공산 갓바위.png" alt=""></td> <td><img src="팔공산 바위.jpg" alt=""></td> <td><img src="멧돼지.jpg" alt=""></td>
+        </tr>
+        <tr>
+            <td><img src="동물.jpg" alt=""></td><td><img src="동물2.jpg" alt=""></td><td><img src="동물3.jpg" alt=""></td>
+        </tr>
+    </table>
+
+    <hr><br>
+
+    
+    
+
+</div>
+    
+</body>
+</html>

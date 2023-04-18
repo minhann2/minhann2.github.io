@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<style type="text/css">
+    img
+    {
+        width: 1100px;
+        height: 600px;
+    }
+    ul
+    {
+        display: table;
+        margin: auto;
+        width: auto;
+    }
+    #menu > ul > li > ul
+    {
+        width:130px;
+        display:none;
+        position: absolute;
+        font-size:14px;
+        background: skyblue;
+    }
+    #menu > ul > li:hover > ul
+    {
+        display:block;
+    }
+    #menu > ul > li > ul > li:hover
+    {
+        background: orange;
+        transition: ease 1s;
+    }
+    /* 전체영역에서 여백을 없애줌 */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    /* ul li태그에 리스트 스타일을 없앰 */
+        ul li{
+            list-style: none;
+        }
+    /* a태그에 텍스트 밑줄을 없애고 색상을 #333 */
+        a {
+            text-decoration: none;
+            color:#333;
+        }
+    /* 글자크기를 16px 맑은 고딕 굵게하고 width넓이 700, 높이 50만큼 배경색은 #ccc, 글자색은 검정색, 라인높이50px
+    menu박스 가운데정렬, 글자가운데 정렬 */
+        #menu {
+            font:bold 16px "malgun gothic";
+            width: 100%;
+            height:50px;
+            background: white;
+            color:black;
+            line-height: 50px; 
+            margin:auto;
+            text-align:center;
+        }
+    
+    /* menu태그 자식의 ul의 자식 li를 왼쪽정렬과 넓이 140설정 */
+        #menu > ul > li {
+            float:left;
+            width:140px;
+            position:relative;
+        }
+        body{
+            /* background-size: cover; */
+            background-color:antiquewhite;
+        }
+        </style>
+<title>팔공산</title>
+</head>
+
+<script>
+    var index = 0;   //이미지에 접근하는 인덱스
+    window.onload = function(){
+        slideShow();
+    }
+    
+    function slideShow() {
+    var i;
+    var x = document.getElementsByClassName("slide1");  //slide1에 대한 dom 참조
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";   //처음에 전부 display를 none으로 한다.
+    }
+    index++;
+    if (index > x.length) {
+        index = 1;  //인덱스가 초과되면 1로 변경
+    }   
+    x[index-1].style.display = "block";  //해당 인덱스는 block으로
+    setTimeout(slideShow, 3000);   //함수를 3초마다 호출
+ 
+}
+</script>
+
+<body>
+    <p style="font-size: 50px; font-weight: bold; color:black; text-align: center; margin: 50px;">팔공산</p>
+<div id="menu">
+    <ul>
+        <li><a href="#">소개</a>
+            <ul>
+                <li><a href="https://www.daegu.go.kr/env/index.do?menu_id=00000914">팔공산의 유래</a></li>
+                <li><a href="https://www.daegu.go.kr/env/index.do?menu_id=00000915">공원현황</a></li>
+                <li><a href="https://www.daegu.go.kr/env/index.do?menu_id=00000916">주요시설</a></li>
+            </ul>
+        </li>
+        <li><a href="#">관광지</a>
+            <ul>
+                <li><a href="x.html">케이블카</a></li>
+                <li><a href="x2.html">동화사</a></li>
+                <li><a href="x3.html">갓바위</a></li>          
+            </ul>
+        </li>
+        <li>
+            <a href="#">먹거리</a>
+            <ul>
+                <li><a href="food.html">식당</a></li>
+                <li><a href="dessert.html">디저트</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://www.daegu.go.kr/env/index.do?menu_id=00000917">오시는길</a>
+        </li>
+    </ul>
+    <ul>
+        <div>
+            <img class="slide1" src="팔공산1.jpg">
+            <img class="slide1" src="갓바위2.jpg">
+            <img class="slide1" src="동화사1.jpg">
+            <img class="slide1" src="케이블카1.jpg">
+        </div>
+    </ul>
+</div>
+</body>
+</html>
